@@ -1,0 +1,76 @@
+<!DOCTYPEhtml>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Home</title>
+		<link rel="stylesheet" href="css/bootstrap.css"/>
+		<link rel="stylesheet" href="css/style.css"/>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<hr/>
+					<form action="demo.html" method="POST">
+						<div class="form-group">	
+							<label for="firstName">First Name</label>
+							<input type="text" name="first_name" class="form-control" id="firstName" value="John">
+						</div>
+						<div class="form-group">	
+							<label for="lastName">Last Name</label>
+							<input type="text" name="last_name" class="form-control" id="lastName" value="Doe">
+						</div>
+						<div class="form-group">	
+							<label for="email">Email Address</label>
+							<input type="email" name="email_address" class="form-control" id="email" value="example@abc.com">
+						</div>
+						<div class="form-group">	
+							<label for="password">Password (Minimum 6 characters)</label>
+							<input type="password" name="password" class="form-control" id="password">
+						</div>
+						<div class="form-group">	
+							<label for="phoneNumber">Phone Number</label>
+							<input type="number" name="phone_number" class="form-control" id="phoneNumber">
+						</div>
+						<div class="form-group">	
+							<label for="dateOfBirth">Date of Birth</label>
+							<input type="date" name="date_of_birth" class="form-control" id="dateOfBirth">
+						</div>
+						<div class="form-group">	
+							
+							<label class="radio-inline"> <input type="radio" name="gender" id="male" value="male">Male</label>
+							<label class="radio-inline"> <input type="radio" name="gender" id="female" value="female">Female</label>
+						</div>
+						<div class="form-group">	
+							<label for="address">Address</label>
+							<textarea name="address" class="form-control" rows="5"></textarea>
+						</div>
+						<div class="form-group">	
+							<label>District</label>
+							<select name="district_name" class="form-control">
+								<option>--Select--</option>
+								<option value="dhaka">Dhaka</option>
+								<option value="khulna">Khulna</option>
+							</select>
+						</div>
+						<div class="form-group">	
+							<label>Image</label>
+							<input type="file" name="image" accept="image/*" multiple id="image"><!--Choose Multiple files-->
+						</div>
+						<div class="form-check">
+							<label class="form-check-label">
+								<input type="checkbox" name="agree" value="agree" class="form-check-input">I agree with all terms and conditions
+							</label>
+							
+						</div>
+						<div class="form-group">
+							<input type="submit" name="btn" value="submit" class="btn btn-success btn-block" />
+						</div>
+					</form>				
+				</div>
+			</div>
+		</div>
+
+		<script src="js/bootstrap.js"></script>	
+	</body>
+</html>
