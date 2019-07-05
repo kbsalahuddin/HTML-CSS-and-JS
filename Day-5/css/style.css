@@ -1,0 +1,107 @@
+
+*{box-sizing: border-box;} /*global selector; alwasys put on top*/
+.col-1{ width:8.33%; }
+.col-2{ width:16.66%;}
+.col-3{ width:25%;   }
+.col-4{ width:33.33%;}
+.col-5{ width:41.66%;}
+.col-6{ width:50%;   }
+.col-7{ width:58.33%;}
+.col-8{ width:66.66%;}
+.col-9{ width:75%;   }
+.col-10{ width:83.33%;}
+.col-11{ width:91.66%;}
+.col-12{ width:100%;  }
+[class*='col-']{
+	float: left;
+	border: 1px solid black;
+	
+}
+.row:after{
+	content:'';
+	clear:both;
+	display:block;
+}
+.wrapper{
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+}
+.header-height{ height: 200px;}
+.menu-height{ height: 50px;}
+.content-height{ height: 600px;}
+.big-footer-height{ height: 250px;}
+.footer-height{ height: 40px;}
+.main-ul{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+.main-ul li{
+	float:left;
+	width: 120px;
+	border: 1px solid grey;
+}
+.main-ul li a{
+	border: 1px solid;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	height: 47px;
+	padding-top: 15px;
+	background-color: black;
+	color: white;
+	transition: 1s;
+}
+.main-ul li a:hover{
+	background-color:white;
+	color:black;
+}
+/*to create shapes div-one and div-two*/
+.div-one{
+	float: left;
+	height: 200px;
+	width: 200px;
+	/*background: linear-gradient(to left, red, green);*/
+	/*border:1px solid red;*/
+	/*border-right: none;*/
+	background-color: red;
+	margin: 50px 0px 0px 50px;
+	animation: bitm;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	/*border-radius: 0px 100px 100px 0px;*/
+	/*transform: skew(-30deg);
+	transform: rotate(360deg);
+	transition: 20s;*/
+}
+/*.div-one:hover{
+	transform: scale(1.5);*/
+	/*transform: rotate(180deg);
+}*/
+/*.div-two{
+	float: left;
+	height: 150px;
+	width: 20px;
+	background-color: red;
+	margin: 50px 0px 0px 84px;
+	/*border-radius: 100px;
+	transform: skew(30deg);
+
+}*/
+
+/*for animation */
+/*@keyframes bitm{
+	0%{ background-color: green;transform: rotate(0deg) scale(1); }
+	
+	50%{ background-color: red; transform: rotate(180deg) scale(1.5);}
+	
+	100%{ background-color: black; transform: rotate(360deg) scale(1);}
+}*/
+@keyframes bitm{
+	0%{ background: url("../images/1.jpg"); }
+	25%{ background: url("../images/2.jpg");}
+	50%{ background: url("../images/3.jpg");}
+	75%{ background: url("../images/4.jpg"); }
+	100%{ background: url("../images/5.jpg");}
+}
