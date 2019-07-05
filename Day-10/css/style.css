@@ -1,0 +1,13 @@
+.carousel-item-padding{
+	padding: 100px 340px;
+	border: 1px solid black;
+	text-align: center;
+}
+.carousel-item-padding p{
+	text-align: center;
+}
+.add-section{
+	background: url("../images/three.jpg");
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
